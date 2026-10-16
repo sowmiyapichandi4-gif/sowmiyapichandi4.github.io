@@ -1,0 +1,200 @@
+[
+{
+"filter_id":1,
+"products":[{
+             "product_id":10,
+             "product_name":"Iron box",
+             "imgSrc":"../image/iron.jpg",
+             "price":5000
+             },
+             {
+             "product_id":11,
+             "product_name":"Waterbottle",
+             "imgSrc":"../image/waterbottle.jpg",
+             "price":3500
+             },
+             {
+             "product_id":13,
+             "product_name":"Sofa",
+             "imgSrc":"../image/sofa.jpg",
+             "price":500
+             },
+             {
+             "product_id":14,
+             "product_name":"Fan",
+             "imgSrc":"../image/home4.jpg",
+             "price":6000
+             },
+
+             {
+             "product_id":15,
+             "product_name":"Pillows",
+             "imgSrc":"../image/home5.jpg",
+             "price":500
+             },
+             {
+             "product_id":16,
+             "product_name":"Bean bag",
+             "imgSrc":"../image/home6.jpg",
+             "price":1000
+             }]
+ },
+ {
+ "filter_id":2,
+ "products":[{
+            "product_id":17,
+            "product_name":"Men Jacket",
+            "imgSrc":"../image/menjacket.jpg",
+            "price":3000
+            },
+            {
+            "product_id":18,
+            "product_name":"Full hand T Shirt",
+            "imgSrc":"../image/fullhand.jpg",
+            "price":1999
+            },
+            {
+            "product_id":19,
+            "product_name":"Men Jeans",
+            "imgSrc":"../image/menjean.jpg",
+            "price":1500
+            },
+            {
+            "product_id":20,
+            "product_name":"Casual pants",
+            "imgSrc":"../image/mencausal.jpg",
+            "price":600
+            },
+            {
+            "product_id":21,
+            "product_name":"Men shoes",
+            "imgSrc":"../image/shoe.jpg",
+            "price":999
+            },
+            {
+            "product_id":22,
+            "product_name":"Men Watch",
+            "imgSrc":"../image/menwatch.jpg",
+            "price":3000
+            }]
+            
+ },
+ {
+ "filter_id":3,
+ "products":[{
+             "product_id":23,
+             "product_name":"Women Jeans",
+             "imgSrc":"../image/womenjean.jpg",
+             "price":600
+             },
+             {
+             "product_id":24,
+             "product_name":"Women T Shirt",
+             "imgSrc":"../image/women3.jpg",
+             "price":500
+             },
+             {
+             "product_id":25,
+             "product_name":"Western Dress",
+             "imgSrc":"../image/women2.jpg",
+             "price":1000
+             },
+             {
+             "product_id":26,
+             "product_name":"Women Watch",
+             "imgSrc":"../image/watch.jpg",
+             "price":3000
+             },
+             {
+             "product_id":27,
+             "product_name":"Heels",
+             "imgSrc":"../image/heel.jpg",
+             "price":1500
+             },
+             {
+             "product_id":28,
+             "product_name":"Women Bag",
+             "imgSrc":"../image/handbag.jpg",
+             "price":2600
+             }]
+ },
+ {
+ "filter_id":4,
+ "products":[{
+              "product_id":29,
+              "product_name":"Mutton Biryani",
+              "imgSrc":"../image/food5.jpg",
+              "price":399
+              },
+              {
+              "product_id":30,
+              "product_name":"Dosa",
+              "imgSrc":"../image/food6.jpg",
+              "price":150
+              },
+              {
+              "product_id":31,
+              "product_name":"Chappathi",
+              "imgSrc":"../image/food7.jpg",
+              "price":150
+              },
+              {
+              "product_id":32,
+              "product_name":"Cake",
+              "imgSrc":"../image/food8.jpg",
+              "price":399
+              },
+              {
+              "product_id":33,
+              "product_name":"Coca Cola",
+              "imgSrc":"../image/food9.jpg",
+              "price":399
+              },
+              {
+              "product_id":34,
+              "product_name":"Coffee",
+              "imgSrc":"../image/coffee.jpg",
+              "price":60
+              }]
+ },
+ {
+ "filter_id":5,
+ "products":[{
+              "product_id":35,
+              "product_name":"Stranger Things",
+              "imgSrc":"../image/stranger.jpg",
+              "price":199
+              },
+              {
+              "product_id":36,
+              "product_name":"Harry Potter",
+              "imgSrc":"../image/book2.jpg",
+              "price":299
+              },
+              {
+              "product_id":37,
+              "product_name":"Jungle Stories",
+              "imgSrc":"../image/jungle.jpg",
+              "price":399
+              },
+              {
+              "product_id":38,
+              "product_name":"Joly Bible",
+              "imgSrc":"../image/holy.jpg",
+              "price":499
+              },
+              {
+              "product_id":39,
+              "product_name":"Quran",
+              "imgSrc":"../image/quran.jpg",
+              "price":399
+              },
+              {
+              "product_id":40,
+              "product_name":"Sri Bhagavad Gita",
+              "imgSrc":"../image/bakavathi.jpg",
+              "price":399
+              }]
+ 
+}
+]

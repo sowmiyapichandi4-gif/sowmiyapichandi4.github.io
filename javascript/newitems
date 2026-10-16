@@ -1,0 +1,143 @@
+
+
+// display items
+
+function displayItems(filter_id) {
+
+/*
+	let cvalue=getCookie("username")
+	if(!(cvalue===null)&&!(cvalue===""))
+	{
+	if(!(localStorage.getItem("finalHTML")===null))
+	{
+ 
+	document.getElementById("flexOutput").innerHTML=localStorage.getItem("finalHTML")
+	
+	let qtyArray=localStorage.getItem("qty").split(",")
+	
+	let prodArray=localStorage.getItem("productsArray").split(",")
+	
+	for(let i=0;i<prodArray.length;i++)
+	{	
+		document.getElementById(`i${prodArray[i]}`).value=qtyArray[i]	
+	}
+	}
+	
+	}*/
+
+
+
+
+
+	fetch("../json/products.json").then((response) =>
+		response.json()
+	).then((myObject) => {
+		for (let k in myObject) {
+			if (myObject[k].filter_id === filter_id) {
+
+				let arr = myObject[k].products
+
+				let productHTML = ""
+				for (let j in arr) {
+
+					productHTML += displayProduct(arr[j])
+
+				}
+				let myRow = document.querySelectorAll(".myRow")
+
+				for (let o in myRow) {
+					myRow[o].innerHTML = ""
+				}
+
+
+
+				document.querySelectorAll(".myRow")[0].innerHTML = productHTML
+
+
+				document.querySelectorAll(".myRow")[0].style.display = "flex"
+				document.querySelectorAll(".myRow")[0].style.flexDirection = "row"
+				document.querySelectorAll(".myRow")[0].style.justifyContent = "space-around"
+				document.querySelectorAll(".myRow")[0].style.alignContent = "space-around"
+				document.querySelectorAll(".myRow")[0].style.flexWrap = "wrap"
+				document.querySelectorAll(".myRow")[0].style.padding = "10px"
+				document.querySelectorAll(".myRow")[0].style.paddingTop = "0px"
+				document.querySelectorAll(".myRow")[0].style.height = "auto"
+
+
+
+
+
+				let myBlocks = document.querySelectorAll(".myRow div")
+
+				for (let i in myBlocks) {
+
+					if (!(String(myBlocks[i].innerHTML) === "undefined") && !(String(myBlocks[i].innerHTML) === "")) {
+
+						myBlocks[i].style.width = "300px"
+						myBlocks[i].style.height = "300px"
+						myBlocks[i].style.textAlign = "center"
+						myBlocks[i].style.borderRadius = "3%"
+						myBlocks[i].style.border = "2px solid black"
+						myBlocks[i].style.marginTop = "10px"
+					}
+				}
+
+				let myImages = document.querySelectorAll(".myRow img")
+
+
+
+				for (let m in myImages) {
+
+					if (!(String(myImages[m].innerHTML) === "undefined") && (typeof (myImages[m]) === "object")) {
+
+
+						myImages[m].style.width = "180px"
+						myImages[m].style.height = "180px"
+						myImages[m].style.objectFit = "cover"
+					}
+				}
+
+				let mySpan = document.querySelectorAll(".myRow span")
+
+				for (let n in mySpan) {
+
+					if (!(String(mySpan[n].innerHTML) === "undefined") && (typeof (mySpan[n]) === "object")) {
+
+						mySpan[n].style.float = "left"
+						mySpan[n].style.color = "red"
+						mySpan[n].style.margin = "6px auto auto 10px"
+					}
+				}
+
+
+				let myCartButton = document.querySelectorAll(".myRow button")
+
+				for (let j in myCartButton) {
+					if (!(String(myCartButton[j].innerHTML) === "undefined") && (typeof (myCartButton[j]) === "object")) {
+
+						myCartButton[j].style.borderRadius = "20px"
+						myCartButton[j].style.margin = "auto 10px auto auto"
+
+					}
+				}
+
+
+			}
+		}
+	})
+
+
+
+}
+
+function displayProduct(product) {
+
+	return `<div id="p${product.product_id}">
+	<H2>${product.product_name}</H2>
+	<img src="${product.imgSrc}">
+	<br>
+	<HR style="margin-bottom:10px;">
+	<span>₹${product.price}</span><button class="float-right btn btn-info" onclick="addToCart(${product.product_id},'${product.product_name}','${product.imgSrc}',${product.price})">Add-to-cart</button></div>`
+
+}
+
